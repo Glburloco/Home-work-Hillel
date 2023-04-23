@@ -33,49 +33,49 @@ elif datetime.date(2023, 1, 21) <= user_date <= datetime.date(2023, 2, 18):
     print(
         'Сегодня ты будешь создавать программу, которая заставит людей думать, что ты читаешь их мысли.'
     )
-elif datetime.date(2023, 12, 22) <= user_date <= datetime.date(2023, 1, 20):
+elif datetime.date(2023, 1, 20) <= user_date <= datetime.date(2023, 12, 22):
     print('Ти Козеріг')
     print(
         'Сегодня твой код будет настолько эффективным, что ты сможешь закончить работу за два дня, когда другим программистам потребуется целая неделя.'
     )
-elif datetime.date(2023, 11, 23) <= user_date <= datetime.date(2023, 12, 21):
+elif datetime.date(2023, 12, 21) <= user_date <= datetime.date(2023, 11, 23):
     print('Ти Стрілець')
     print(
         'Сегодня ты будешь создавать программу, которая будет настолько быстрой'
     )
-elif datetime.date(2023, 10, 24) <= user_date <= datetime.date(2023, 11, 22):
+elif datetime.date(2023, 11, 22) <= user_date <= datetime.date(2023, 10, 24):
     print('Ти Скорпіон')
     print(
         'Сегодня ты будешь работать над самой сложной программой на свете, потому что ты скорпион, и ты не знаешь слова "невозможно".'
     )
-if datetime.date(2023, 9, 24) <= user_date <= datetime.date(2023, 10, 23):
+elif datetime.date(2023, 10, 23) <= user_date <= datetime.date(2023, 9, 24):
     print('Ти Терези')
     print(
         'Сегодня ты будешь создавать программу, которая решит все проблемы мира, пока твой другой проект застрян в стадии "Hello World"'
     )
-if datetime.date(2023, 9, 23) <= user_date <= datetime.date(2023, 8, 22):
+elif datetime.date(2023, 8, 22) <= user_date <= datetime.date(2023, 9, 23):
     print('Ти Діва')
     print(
         'Сегодня твой код будет настолько чистым, что ты сможешь есть с него обед'
     )
-if datetime.date(2023, 8, 21) <= user_date <= datetime.date(2023, 7, 23):
+elif datetime.date(2023, 7, 23) <= user_date <= datetime.date(2023, 8, 21):
     print('Ти Лев')
     print(
         'Сегодня ты будешь создавать самую крутую программу на свете, потому что ты Лев, и тебе это по плечу.'
     )
-if datetime.date(2023, 7, 22) <= user_date <= datetime.date(2023, 6, 22):
+elif datetime.date(2023, 6, 22) <= user_date <= datetime.date(2023, 7, 22):
     print('Ти Рак')
     print(
         'Сегодня ты будешь работать над созданием программы, которая сможет заменить всех программистов, включая тебя.')
-if datetime.date(2023, 6, 21) <= user_date <= datetime.date(2023, 5, 22):
+elif datetime.date(2023, 5, 22) <= user_date <= datetime.date(2023, 6, 21):
     print('Ти Близнята')
     print(
         'Сегодня ты будешь переключаться на другой язык программирования каждые пять минут, потому что ты можешь.')
-if datetime.date(2023, 4, 21) <= user_date <= datetime.date(2023, 5, 21):
+elif datetime.date(2023, 4, 21) <= user_date <= datetime.date(2023, 5, 21):
     print('Ти Телець')
     print(
         'Сегодня ты будешь настолько занят созданием программы, что забудешь, что такое "сон".')
-if datetime.date(2023, 3, 21) <= user_date <= datetime.date(2023, 4, 20):
+elif datetime.date(2023, 3, 21) <= user_date <= datetime.date(2023, 4, 20):
     print('Ти Овен')
     print(
         'Сегодня твой код будет настолько хорош, что даже боги программирования завидуют тебе.'

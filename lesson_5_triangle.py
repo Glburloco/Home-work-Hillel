@@ -11,12 +11,12 @@ if n >= 2:
         print("*" * i)
         i -= 1
     print("triangle #3:")
+    i = n
+    while i >= 1:
+        print(" " * (n - i) + "*" * i)
+        i -= 1
+    print("triangle #4:")
     i = 1
     while i <= n:
         print(" " * (n - i) + "*" * i)
         i += 1
-    print("triangle #4:")
-    i = n
-    while i >= 1:
-        print(" " * (n - i) + "*" *i)
-        i -= 1

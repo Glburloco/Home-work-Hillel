@@ -1,25 +1,18 @@
 n = int(input("Enter you side of a triangle: "))
-if n >= 2:
+
+if n >= 1:
     print("triangle #1:")
-    i = 1
-    while i <= n:
+    for i in range(n, 0, -1):
         print("*" * i)
-        i += 1
 
     print("triangle #2:")
-    i = n
-    while i >= 1:
+    for i in range(1, n+1):
         print("*" * i)
-        i -= 1
 
     print("triangle #3:")
-    i = n
-    while i >= 1:
+    for i in range(n, 0, -1):
         print(" " * (n - i) + "*" * i)
-        i -= 1
 
     print("triangle #4:")
-    i = 1
-    while i <= n:
+    for i in range(1, n+1):
         print(" " * (n - i) + "*" * i)
-        i += 1

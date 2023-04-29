@@ -33,4 +33,4 @@ else:
 
 print("Password score:{score}"" in 5")
 if recommendation:
-    print("\n".join(recommendation))
+    print("Recommendation:\n"+"\n".join(recommendation))

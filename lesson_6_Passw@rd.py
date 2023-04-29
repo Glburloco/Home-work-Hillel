@@ -31,6 +31,6 @@ if any(char in spec_chars for char in password):
 else:
     recommendation.append("Use special characters")
 
-print("Password score:{score}"" in 5")
+print("Password score:",score," in 5")
 if recommendation:
     print("Recommendation:\n"+"\n".join(recommendation))

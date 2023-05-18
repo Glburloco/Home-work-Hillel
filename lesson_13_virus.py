@@ -1,15 +1,15 @@
-n = int(input())
+n = int(input("Enter number of files N: "))
 files = {}
 
 for _ in range(n):
-    file, extension = input().split(maxsplit=1)
+    file, extension = input("Enter file name and operation (X, R, W): ").split(maxsplit=1)
     files[file] = extension.split()
 
-m = int(input())
+m = int(input("Enter the number of file requests M: "))
 requests = []
 
 for _ in range(m):
-    action, file = input().split()
+    action, file = input("Enter the query (option file name): ").split()
     requests.append((action, file))
 
 actions = {

@@ -3,7 +3,7 @@ files = {}
 
 for _ in range(n):
     file, extension = input("Enter file name and operation (X, R, W): ").split(maxsplit=1)
-    files[file] = extension.split()
+    files[file] = [extension.lower(), extension.upper()]
 
 m = int(input("Enter the number of file requests M: "))
 requests = []
@@ -19,8 +19,12 @@ actions = {
 }
 print("Output:")
 for action, file in requests:
-    file_extension = files.get(file, [])
-    if actions.get(action) in file_extension or 'R' in file_extension or 'W' in file_extension:
+    file_extension = files.get(file, '')
+    if action == 'write' and 'W' in file_extension:
+        print("OK")
+    elif action == 'read' and 'R' in file_extension:
+        print("OK")
+    elif action == 'execute' and 'X' in file_extension:
         print("OK")
     else:
         print("Access denied")

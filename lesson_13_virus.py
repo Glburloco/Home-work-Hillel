@@ -2,25 +2,26 @@ n = int(input("Enter number of files N: "))
 files = {}
 
 for _ in range(n):
-    file, extension = input("Enter file name and operation (X, R, W): ").split()
-    files[file] = extension.upper()
+    file, operations = input("Enter file name and operations (X, R, W): ").split(maxsplit=1)
+    files[file] = set(operations.upper().split())
 
 m = int(input("Enter the number of file requests M: "))
 requests = []
 
 for _ in range(m):
-    action, file = input("Enter the query (option file name): ").split()
-    requests.append((action.lower(), file))
+    operation, file = input("Enter the query (option file name): ").split()
+    requests.append((operation.lower(), file))
 
 actions = {
     'write': 'W',
     'read': 'R',
     'execute': 'X'
 }
+
 print("Output:")
-for action, file in requests:
-    file_extension = files.get(file, '')
-    if actions.get(action) == file_extension:
+for operation, file in requests:
+    file_operations = files.get(file, set())
+    if actions.get(operation) in file_operations:
         print("OK")
     else:
         print("Access denied")
